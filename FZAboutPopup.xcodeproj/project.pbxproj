@@ -14,6 +14,8 @@
 		E32D86F11B3E41BB00C87612 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32D86F01B3E41BB00C87612 /* Images.xcassets */; };
 		E32D86F41B3E41BB00C87612 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E32D86F21B3E41BB00C87612 /* LaunchScreen.xib */; };
 		E32D87001B3E41BC00C87612 /* FZAboutPopupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E32D86FF1B3E41BC00C87612 /* FZAboutPopupTests.m */; };
+		E32D87141B3E442C00C87612 /* Main~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32D87131B3E442C00C87612 /* Main~ipad.storyboard */; };
+		E32D87171B3E4D8400C87612 /* FZAboutPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = E32D87161B3E4D8400C87612 /* FZAboutPopup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		E32D86F91B3E41BC00C87612 /* FZAboutPopupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZAboutPopupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32D86FE1B3E41BC00C87612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32D86FF1B3E41BC00C87612 /* FZAboutPopupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZAboutPopupTests.m; sourceTree = "<group>"; };
+		E32D87131B3E442C00C87612 /* Main~ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main~ipad.storyboard"; sourceTree = "<group>"; };
+		E32D87151B3E4D8400C87612 /* FZAboutPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZAboutPopup.h; sourceTree = "<group>"; };
+		E32D87161B3E4D8400C87612 /* FZAboutPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZAboutPopup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +91,12 @@
 				E32D86EA1B3E41BB00C87612 /* ViewController.h */,
 				E32D86EB1B3E41BB00C87612 /* ViewController.m */,
 				E32D86ED1B3E41BB00C87612 /* Main.storyboard */,
+				E32D87131B3E442C00C87612 /* Main~ipad.storyboard */,
 				E32D86F01B3E41BB00C87612 /* Images.xcassets */,
 				E32D86F21B3E41BB00C87612 /* LaunchScreen.xib */,
 				E32D86E31B3E41BB00C87612 /* Supporting Files */,
+				E32D87151B3E4D8400C87612 /* FZAboutPopup.h */,
+				E32D87161B3E4D8400C87612 /* FZAboutPopup.m */,
 			);
 			path = FZAboutPopup;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32D87141B3E442C00C87612 /* Main~ipad.storyboard in Resources */,
 				E32D86EF1B3E41BB00C87612 /* Main.storyboard in Resources */,
 				E32D86F41B3E41BB00C87612 /* LaunchScreen.xib in Resources */,
 				E32D86F11B3E41BB00C87612 /* Images.xcassets in Resources */,
@@ -221,6 +230,7 @@
 			files = (
 				E32D86EC1B3E41BB00C87612 /* ViewController.m in Sources */,
 				E32D86E91B3E41BB00C87612 /* AppDelegate.m in Sources */,
+				E32D87171B3E4D8400C87612 /* FZAboutPopup.m in Sources */,
 				E32D86E61B3E41BB00C87612 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +355,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FZAboutPopup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,7 +367,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FZAboutPopup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +428,7 @@
 				E32D87051B3E41BC00C87612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32D87061B3E41BC00C87612 /* Build configuration list for PBXNativeTarget "FZAboutPopupTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +437,7 @@
 				E32D87081B3E41BC00C87612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

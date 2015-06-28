@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FZAboutPopup.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)onAboutButton:(id)sender
+{
+    FZAboutPopup *about=[[FZAboutPopup alloc] initWithIconImage:[UIImage imageNamed:@"Icon-iPhone-76"]];
+    [about show];
 }
 
 @end
